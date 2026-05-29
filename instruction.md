@@ -12,7 +12,7 @@ This repository contains my personal Linux configuration files.
 sudo pacman -S --needed \
 fish rofi swaync fastfetch nautilus \
 nwg-look pavucontrol \
-ttf-jetbrains-mono-nerd ttf-rubik
+ttf-jetbrains-mono-nerd gpsd
 ```
 
 ---
@@ -22,7 +22,7 @@ ttf-jetbrains-mono-nerd ttf-rubik
 ### waybar with cava support
 
 ```bash
-yay -S waybar-cava-git
+yay -S waybar-cava-git ttf-rubik
 ```
 
 ---
