@@ -1,0 +1,1 @@
+hyprland configuration for nixos
