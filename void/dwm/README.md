@@ -1,5 +1,7 @@
 # dwm configuration for void linux
 
+![overview](../../void/dwm/screenshots/overview.png)
+
 ## Install Packages
 ```
 sudo xbps-install -Suy
