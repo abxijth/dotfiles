@@ -1,0 +1,69 @@
+@define-color gray1 #24283b; /* normal bg     */
+@define-color gray2 #292e42; /* sep / border  */
+@define-color gray3 #a9b1d6; /* normal fg     */
+@define-color gray4 #7dcfff; /* selected fg   */
+@define-color selbg #24283b; /* selected bg   */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+window#waybar {
+    background-color: @gray1;
+    color: @gray3;
+    border: none;
+}
+
+#workspaces button {
+    padding: 0 2px;
+    margin: 1px 0;
+    color: @gray3;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+#workspaces button.active {
+    color: @gray4;
+    background: @selbg;
+}
+#workspaces button.empty {
+    color: #565f89;
+}
+#workspaces button.empty.active {
+    color: @gray4;
+    background: @selbg;
+}
+#workspaces button.urgent {
+    background-color: @gray2;
+}
+
+button:hover {
+    background: inherit;
+    box-shadow: none;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#network,
+#custom-sep,
+#tray {
+    padding: 0 6px;
+    color: @gray3;
+}
+
+#custom-sep {
+    color: @gray3;
+}
+
+#network.disconnected {
+    background-color: @gray2;
+}
+
+#tray {
+    background-color: @gray2;
+}
